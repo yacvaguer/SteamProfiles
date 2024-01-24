@@ -1,0 +1,554 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="Rust.Platform.Common">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Platform.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.CSharp">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Unity">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Rcon">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Rcon.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Unity">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.SQLite">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Input">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Input.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Localization">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Localization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="Melanchall.DryWetMidi">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Melanchall.DryWetMidi.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Users\pablo\Downloads\Managed\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="TimeZoneConverter">
+      <HintPath>C:\Users\pablo\Downloads\Managed\TimeZoneConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Rare">
+      <HintPath>C:\Users\pablo\Downloads\Managed\I18N.Rare.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EZhex1991.EZSoftBone">
+      <HintPath>C:\Users\pablo\Downloads\Managed\EZhex1991.EZSoftBone.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Clans">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Clans.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.MySql">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.MySql.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="LZ4">
+      <HintPath>C:\Users\pablo\Downloads\Managed\LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Assembly-CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.FileSystem">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="LZ4pn">
+      <HintPath>C:\Users\pablo\Downloads\Managed\LZ4pn.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TerrainTools">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.TerrainTools.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Pdb">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Burst.Cecil.Pdb.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MP3Sharp">
+      <HintPath>C:\Users\pablo\Downloads\Managed\MP3Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Rust">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.Rust.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Zip.Reduced">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Ionic.Zip.Reduced.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="MidiJack">
+      <HintPath>C:\Users\pablo\Downloads\Managed\MidiJack.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Tds">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Data.Tds.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Core">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Steamworks.Posix">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Steamworks.Posix.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.CJK">
+      <HintPath>C:\Users\pablo\Downloads\Managed\I18N.CJK.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Burst.Cecil.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Rocks">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Burst.Cecil.Rocks.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.Other">
+      <HintPath>C:\Users\pablo\Downloads\Managed\I18N.Other.dll</HintPath>
+    </Reference>
+    <Reference Include="Fleck">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Fleck.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Platform.Steam">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Platform.Steam.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="CurvedTextMeshPro">
+      <HintPath>C:\Users\pablo\Downloads\Managed\CurvedTextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="GA">
+      <HintPath>C:\Users\pablo\Downloads\Managed\GA.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnityEngine">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Cronos">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Cronos.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.System">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.System.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Flexbox">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Flexbox.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Ext.RustEdit">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.Ext.RustEdit.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.GoogleSheets">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.GoogleSheets.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.References">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.References.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Sqlite">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Unsafe">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Burst.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.EnterpriseServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Security">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Users\pablo\Downloads\Managed\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Recorder.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Clans.Local">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Clans.Local.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.MidEast">
+      <HintPath>C:\Users\pablo\Downloads\Managed\I18N.MidEast.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Internals">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.ServiceModel.Internals.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Data.DataSetExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Workshop">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Workshop.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Network">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Global">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Global.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Burst.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Burst.Cecil.Mdb">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Burst.Cecil.Mdb.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Platform">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Platform.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Configuration.Install.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="EasyRoads3Dv3">
+      <HintPath>C:\Users\pablo\Downloads\Managed\EasyRoads3Dv3.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Common">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="DelaunayER">
+      <HintPath>C:\Users\pablo\Downloads\Managed\DelaunayER.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.SteamNetworking">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.SteamNetworking.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Data">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Coffee.SoftMaskForUGUI">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Coffee.SoftMaskForUGUI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N">
+      <HintPath>C:\Users\pablo\Downloads\Managed\I18N.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.UI">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Harmony">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Recorder.Base">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Recorder.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.UnwrapBaker.Settings">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.UnwrapBaker.Settings.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Skeleton">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Skeleton.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Nexus">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Nexus.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>C:\Users\pablo\Downloads\Managed\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.World">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.World.dll</HintPath>
+    </Reference>
+    <Reference Include="0Harmony">
+      <HintPath>C:\Users\pablo\Downloads\Managed\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Mathematics">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.Mathematics.dll</HintPath>
+    </Reference>
+    <Reference Include="Rust.Demo">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Rust.Demo.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Console">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Channels">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.Threading.Channels.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="I18N.West">
+      <HintPath>C:\Users\pablo\Downloads\Managed\I18N.West.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.Raknet">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.Raknet.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Users\pablo\Downloads\Managed\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="Oxide.Ext.Chaos">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Oxide.Ext.Chaos.dll</HintPath>
+    </Reference>
+    <Reference Include="Facepunch.BurstCloth">
+      <HintPath>C:\Users\pablo\Downloads\Managed\Facepunch.BurstCloth.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Users\pablo\Downloads\Managed\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
